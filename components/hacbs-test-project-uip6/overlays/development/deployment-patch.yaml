@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-uip6
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/nbe-e2e-svfl-tenant/integ-app-yyyd/hacbs-test-project-uip6@sha256:9ecb822b1c475c4ef8d4d77d2dd340395454604e8dbb3e55a753241545c1c1df
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
